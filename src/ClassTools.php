@@ -78,7 +78,7 @@ class ClassTools
 
                 while ($directory = array_shift($stacks)) {
 
-
+                    if (!is_dir($directory))  continue;
                     $name_add = "";
                     if ($dir_more = str_replace($dir,"",$directory))
                     {
